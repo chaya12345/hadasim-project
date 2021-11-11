@@ -27,6 +27,13 @@ for x in allwords:
             count1+=1
 print('Number of unique words in text file :',count1)
 
+maxi=0
+for e in allwords:
+    if allwords[e]>maxi:
+        maxi=allwords[e]
+        maxiword=e
+print('the populary word is:',maxiword)
+
 
 #4.1
 file = open("D:\data.txt", "rt")
